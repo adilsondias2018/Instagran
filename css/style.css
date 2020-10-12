@@ -19,6 +19,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 	--cor-fundo: white;
 	--cor-texto-principal: black;
+	--cor-fundo-claro: #fafafa;
 	--cor-fundo-rodape: rgb(121, 121, 121);
   
 }
@@ -33,6 +34,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*BODY*/
 body{
 
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .container{
@@ -44,6 +47,8 @@ body{
 
 /*TOPO*/
 header{
+
+	margin-left: 40px;
 	
 }
 	.instagram-logo{
@@ -54,49 +59,180 @@ header{
 
 /*PÁGINA INICIAL*/
 main{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-top: 1px solid #ccc;
 	
 }
 	main .profile-content{
 
-	}
-	main .profile-photo{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		padding: 2rem 0 2rem 0;		
+		background-color: var(--cor-fundo-claro);
 
+	}
+	main .profile-photo {
+		
+		text-align: center;
+		
+		width: 30%;
+
+		
+	}
+
+	main .profile-photo img{		
+		border-radius: 50%;
+
+		
 	}
 
 	main .profile-info{
 
+		width: 70%;
+
+	}
+	main .profile-info h1{
+
+		font-size: 2rem;
+
+
+	}
+	main .profile-info ul{
+
+		list-style-type: none;
+
+		width: 70%;
+
 	}
 
 	main .profile-data{
-
-		display: inline;
-
+		display: flex;
+		flex-direction: row;
+		padding: 10px 0 10px 0;		
 	}
-	main .profile-content{
+	main .profile-data p{		
+		padding-right: 15px;
+		}
 
+	main .profile-data span{
+
+		font-weight: bold;
+		
+
+	
 	}
+	/* main .profile-content{
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		align-content: center;
+		width: 100%;
+
+	} */
 
 	main .highlighted-stories{
+		background-color: var(--cor-fundo-claro);
+		margin-left: 4rem;
+		
 
 	}
+	main .highlighted-stories figure{
+		width: 80px;
+		height: 80px;
+		background-color: blue;
+		border: solid, 1px blue;
+		border-radius: 50%;
+		}
+	main .highlighted-stories img{
+		width: 77px;
+		height: 77px;
+		border: solid, 1px blue;
+		padding: 2px;
+		border-radius: 50%;
+		}
+
+	main .highlighted-stories ul{
+		
+		list-style-type:none;
+		display: flex;
+			
+		}
+		
+	
 	
 	main .profile-posts{
+		
+		list-style-type:none;
+		display: flex;
+		flex-direction: column;
+		border-top: solid 2px #ccc;
+	
+
+	}
+
+	main .profile-posts img {
+		width: 293px;
+		height: 293px;
+		padding: 2px;
+
+	}
+	main .profile-posts nav {
+		list-style-type:none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		padding: 15Px;
+
+		background-color: var(--cor-fundo-claro);
+		
+
+	}
+	main .profile-posts ul {
+		list-style-type:none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+		
 
 	}
 
 /*RODAPÉ*/
 footer{
 
-	background-color: var(--cor-fundo-rodape);
-
+	display: flex;
+	padding: 30px 5px 30px 0px;
+	background-color: var(--cor-fundo-claro);
 }
 
 	footer .footer-nav{
+
+		font-size: 1rem;
+
+		
 		
 	}
+	footer .footer-nav a{ 
+
+		font-weight: bold;
+		color: #1A375E;
+		padding: 0 3px;
+		margin-left: 5px;
+		list-style: none;
+				
+	}
+	
 	
 	footer .copyright{
 
-		
+		margin-right: 2px;
+
 	}
 
