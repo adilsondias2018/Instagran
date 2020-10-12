@@ -16,7 +16,18 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+
+	--cor-fundo: white;
+	--cor-texto-principal: black;
+	--cor-fundo-rodape: rgb(121, 121, 121);
   
+}
+ 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
 }
 
 /*BODY*/
@@ -24,15 +35,22 @@ body{
 
 }
 
+.container{
+ 
+	width: 935px;
+	margin: 0 auto;
+
+}
+
 /*TOPO*/
 header{
 	
 }
+	.instagram-logo{
 
-/*RODAPÉ*/
-footer{
+	}
 
-}
+
 
 /*PÁGINA INICIAL*/
 main{
@@ -41,11 +59,44 @@ main{
 	main .profile-content{
 
 	}
+	main .profile-photo{
+
+	}
+
+	main .profile-info{
+
+	}
+
+	main .profile-data{
+
+		display: inline;
+
+	}
+	main .profile-content{
+
+	}
 
 	main .highlighted-stories{
 
 	}
-
+	
 	main .profile-posts{
 
 	}
+
+/*RODAPÉ*/
+footer{
+
+	background-color: var(--cor-fundo-rodape);
+
+}
+
+	footer .footer-nav{
+		
+	}
+	
+	footer .copyright{
+
+		
+	}
+
