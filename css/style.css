@@ -20,36 +20,29 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	--cor-fundo: white;
 	--cor-texto-principal: black;
 	--cor-fundo-claro: #fafafa;
-	--cor-fundo-rodape: rgb(121, 121, 121);
-  
+	--cor-fundo-rodape: rgb(121, 121, 121);  
 }
  
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
 /*BODY*/
 body{
 
 	font-family: Arial, Helvetica, sans-serif;
-
 }
 
-.container{
- 
+.container{ 
 	width: 935px;
 	margin: 0 auto;
-
 }
 
 /*TOPO*/
 header{
-
-	margin-left: 40px;
-	
+	margin-left: 40px;	
 }
 	.instagram-logo{
 
@@ -64,6 +57,7 @@ main{
 	flex-wrap: wrap;
 	justify-content: center;
 	border-top: 1px solid #ccc;
+	background-color: var(--cor-fundo-claro);
 	
 }
 	main .profile-content{
@@ -78,38 +72,55 @@ main{
 	}
 	main .profile-photo {
 		
-		text-align: center;
-		
+		text-align: center;		
 		width: 30%;
-
 		
+		
+	}
+	main .profile-photo figure {
+
+		background-color: var(--cor-fundo-claro);
+		width: 165px;
+		height: 165px;
+		border-radius: 50%;
+		margin: 0 auto;
+		border: solid 1px #666;			
 	}
 
 	main .profile-photo img{		
-		border-radius: 50%;
-
-		
+		border-radius: 50%;	
+		margin-top: 5px;
 	}
 
 	main .profile-info{
-
 		width: 70%;
-
 	}
 	main .profile-info h1{
-
 		font-size: 2rem;
 
+	}
+	main .profile-info h2{
+		font-size: 1.2rem;
 
 	}
 	main .profile-info ul{
-
 		list-style-type: none;
-
 		width: 70%;
-
 	}
+	main .profile-info ul li { 
+		
+	}
+	main .profile-info ul li p{ 
+		
+	}
+	main .profile-info ul li a{ 
 
+		text-decoration: none;
+		font-weight: bold;
+		color: #1A375E;
+		font-size: 0.8rem;
+		
+	}
 	main .profile-data{
 		display: flex;
 		flex-direction: row;
@@ -121,77 +132,96 @@ main{
 
 	main .profile-data span{
 
-		font-weight: bold;
-		
-
-	
-	}
-	/* main .profile-content{
-
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		align-content: center;
-		width: 100%;
-
-	} */
-
+		font-weight: bold;		
+	}	
 	main .highlighted-stories{
 		background-color: var(--cor-fundo-claro);
 		margin-left: 4rem;
-		
-
+		padding: 15px 0 15px 0;
 	}
-	main .highlighted-stories figure{
-		width: 80px;
-		height: 80px;
-		background-color: blue;
-		border: solid, 1px blue;
-		border-radius: 50%;
-		}
-	main .highlighted-stories img{
-		width: 77px;
-		height: 77px;
-		border: solid, 1px blue;
-		padding: 2px;
-		border-radius: 50%;
-		}
 
-	main .highlighted-stories ul{
-		
+	main .highlighted-stories ul{		
 		list-style-type:none;
 		display: flex;
+		flex-direction: row;
+		align-items: baseline;		
 			
 		}
-		
+		main .highlighted-stories ul li{		
+
+		text-align: center;
+				
+			}
+	main .highlighted-stories figure{
+		background-color: var(--cor-fundo-claro);
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		/* margin: 0 auto;		 */
+		border: solid 1px #666;
+		border-radius: 50%;
+		}
+		main .highlighted-stories figcaption{
+			font-weight: bold;
+			padding-top: 10px;
+			width: max-content;
+			padding: 10px;		
+			
+			}
+	main .highlighted-stories img{		
+		width: 77px;
+		height: 77px;
+		margin-top: 4px;				
+		border-radius: 50%;
+		}
+
+
+
+	main .add-new-highlight{		
+		padding: 10px 20px 25px 0;
+	}
 	
-	
-	main .profile-posts{
-		
+	main .profile-posts{		
 		list-style-type:none;
 		display: flex;
 		flex-direction: column;
 		border-top: solid 2px #ccc;
-	
-
 	}
 
 	main .profile-posts img {
 		width: 293px;
 		height: 293px;
 		padding: 2px;
-
 	}
-	main .profile-posts nav {
-		list-style-type:none;
+	main .profile-posts nav {	
 		display: flex;
 		flex-direction: row;
-		align-items: center;
-
-		padding: 15Px;
-
+		flex-wrap: wrap;			
+		/* align-items: center; */
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto;
+		padding: 15Px 0;        
 		background-color: var(--cor-fundo-claro);
 		
+
+	}
+	main .profile-posts nav a {			
+		padding: 0 30px;
+		color: #666;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: var(--cor-fundo-claro);		
+
+	}
+	main .profile-posts nav a:hover {			
+		padding: 0 30px;
+		color: rgb(82, 82, 82);
+		font-weight: bold;
+		border-top: #1A375E;
+		text-decoration: none;
+		text-transform: uppercase;
+		background-color: var(--cor-fundo-claro);		
 
 	}
 	main .profile-posts ul {
@@ -199,40 +229,272 @@ main{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		
-		
-
 	}
 
 /*RODAPÉ*/
 footer{
-
 	display: flex;
 	padding: 30px 5px 30px 0px;
 	background-color: var(--cor-fundo-claro);
 }
 
 	footer .footer-nav{
-
-		font-size: 1rem;
-
-		
+		font-size: 1rem;	
 		
 	}
 	footer .footer-nav a{ 
-
 		font-weight: bold;
 		color: #1A375E;
 		padding: 0 3px;
 		margin-left: 5px;
-		list-style: none;
-				
+		text-decoration: none;
+		text-transform: uppercase;	
+			
 	}
-	
-	
+	footer .footer-nav a:hover{ 
+		font-weight: bold;
+		color: #1A375E;
+		padding: 0 3px;
+		margin-left: 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
 	footer .copyright{
-
 		margin-right: 2px;
+		text-transform: uppercase;
+	}
+
+	/* MIDIA QUERIES */
+
+
+@media(max-width: 992px){}
+
+@media(max-width: 768px){
+
+	.container{ 
+		width: 80%
+		margin: 0 auto;
+	}
+	
+}
+
+@media(max-width: 580px){
+
+
+}
+
+@media(max-width: 480px){
+	.container{ 
+		width: 450px;
+		margin-left: 0;
+		
+		
+	}
+
+	main .profile-content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+				
+		background-color: var(--cor-fundo-claro);
 
 	}
+	header{
+		
+		
+	}
+		.instagram-logo{
+			margin: 0 auto;
+			
+	
+		}
+		main .profile-info h1{
+		
+			font-size: 1.5rem;
+	
+		}
+		main .profile-info h2{
+			
+			font-size: 1rem;
+			padding-bottom: 5px;
+	
+		}
+		main .profile-info ul{
+			list-style-type: none;
+			width: 380px;
+		}
+	
+		main .profile-data{
+			display: flex;
+			flex-direction: row;
+			padding: 10px 0 10px 0;		
+		}
+		main .highlighted-stories{
+			background-color: var(--cor-fundo-claro);
+			margin-left: 3rem;
+			padding: 15px 0 25px 0;
+		}
+
+		main .highlighted-stories ul{		
+			list-style-type:none;
+			display: flex;
+			flex-direction: row;
+			align-items: baseline;
+			justify-content: center;	
+				
+			}
+			main .profile-posts{		
+				list-style-type:none;
+				display: flex;
+				flex-direction: column;
+						
+				border-top: solid 2px #ccc;
+			}
+			main .profile-posts img {
+				width: 193px;
+				height: 193px;
+				padding: 0;
+			}
+			main .profile-posts nav {	
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;			
+				/* align-items: center; */
+				justify-content: flex-start;
+				width: 100%;
+				
+				padding: 15Px 0; 
+			} 
+			
+			footer{
+				display: flex;
+				flex-direction: column;
+				width: 200px;
+				
+				background-color: var(--cor-fundo-claro);
+				font-size: 0.2rem;
+			}
+			footer .footer-nav{
+				font-size: 0.2rem;	
+				
+			}
+			
+
+			footer .footer-nav a{ 
+				font-size: 0.2rem;
+				
+			}
+
+}
+
+@media(max-width: 380px){
+	
+	.container{ 
+		width: 280px;
+		margin-left: 0;
+		
+		
+	}
+
+	main .profile-content{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+				
+		background-color: var(--cor-fundo-claro);
+
+	}
+	header{
+		
+		
+	}
+		.instagram-logo{
+			margin: 0 auto;
+			
+	
+		}
+		main .profile-info h1{
+		
+			font-size: 0.8rem;
+	
+		}
+		main .profile-info h2{
+			
+			font-size: 0.5rem;
+			padding-bottom: 5px;
+	
+		}
+		main .profile-info ul{
+			list-style-type: none;
+			width: 180px;
+		}
+	
+		main .profile-data{
+			display: flex;
+			flex-direction: column;
+			padding: 10px 0 10px 0;		
+		}
+		main .highlighted-stories{
+			background-color: var(--cor-fundo-claro);
+			margin-left: 3rem;
+			padding: 15px 0 25px 0;
+		}
+
+		main .highlighted-stories ul{		
+			list-style-type:none;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: center;	
+				
+			}
+			main .profile-posts{		
+				list-style-type:none;
+				display: flex;
+				flex-direction: column;
+						
+				border-top: solid 2px #ccc;
+			}
+			main .profile-posts img {
+				width: 193px;
+				height: 193px;
+				padding: 0;
+			}
+			main .profile-posts nav {	
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;			
+				/* align-items: center; */
+				justify-content: flex-start;
+				width: 100%;
+				
+				padding: 15Px 0; 
+			} 
+			
+			footer{
+				display: flex;
+				flex-direction: column;
+				width: 200px;
+				
+				background-color: var(--cor-fundo-claro);
+				font-size: 0.2rem;
+			}
+			footer .footer-nav{
+				font-size: 0.2rem;	
+				
+			}
+			
+
+			footer .footer-nav a{ 
+				font-size: 0.2rem;
+				
+			}		
+				
+			
+
+}
+
+@media(max-width: 320px){}
 
